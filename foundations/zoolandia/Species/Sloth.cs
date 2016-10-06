@@ -5,9 +5,10 @@ namespace Zoolandia.Species
 {
   class Sloth:Animal
   {
-    public Sloth()
+    public Sloth(string name)
     {
       this.speciesName = "Folivora";
+      this.name = name;
     }
 
     public int toeNumber{get; set;}

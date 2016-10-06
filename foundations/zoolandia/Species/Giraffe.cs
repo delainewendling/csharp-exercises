@@ -5,9 +5,10 @@ namespace Zoolandia.Species
 {
   public class Giraffe:Animal
   {
-    public Giraffe()
+    public Giraffe(string name)
     {
       this.speciesName = "Giraffa camelopardalis";
+      this.name = name;
     }
     public string neckLength{ get; set; }
 
