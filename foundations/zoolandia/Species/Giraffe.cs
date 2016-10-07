@@ -1,20 +1,20 @@
-using System;
-using Zoolandia.Animals;
+using Zoolandia.Genuses;
 
 namespace Zoolandia.Species
 {
-  public class Giraffe:Animal
+  public class Giraffe:Giraffa
   {
     public Giraffe(string name)
     {
       this.speciesName = "Giraffa camelopardalis";
+      this.commonName = "Giraffe";
       this.name = name;
     }
     public string neckLength{ get; set; }
 
     public override string animalMessage()
     {
-      return $"{base.animalMessage()} Oh, don't forget his neck is {this.neckLength} long! Whoa!";
+      return $"{base.animalMessage()}.- He lives in {base.region}\n Oh, don't forget his neck is {this.neckLength} long! Whoa!";
     } 
 
   }
