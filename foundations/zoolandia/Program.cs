@@ -45,22 +45,31 @@ namespace Zoolandia
                         weight = "12 lbs",
                         color = "red",
                         numberOfBambooStalks = 1,
-                        isSleeping = false
+                        isSleeping = false,
+                        weirdFact = "Red pandas use their ringed tails as wraparound blankets in the chilly Himalayan mountain heights.",
+                        speed = 23,
+                        hours = 11,
+                        extinction = "Red pandas are endangered, victims of deforestation. Their natural space is shrinking as more and more forests are destroyed by logging and the spread of agriculture.",
+                        sleepLocation = "high up in the trees"
                     };
                     break;
                 case "brown bear": animal = new BrownBear("Kodiak")
                     {
-                        height = "2.7 ft",
-                        weight = "320 lbs",
-                        color = "white",
-                        isSleeping = false
+                        height = "6 ft",
+                        weight = "700 lbs",
+                        color = "brown",
+                        speed = 30,
+                        hours = 4,
+                        isSleeping = false,
+                        hibernation = "Brown bears hibernate 152 - 213 days a year!",
+                        weirdFact = "Even though brown bears are at the top of the food chain, Brown bears eat mostly grass, roots, and berries. Furthermore, brown bears need to eat about 84,000 calories each day to build up enough of a fat store to get them through the winter."
                     };
                     break;
                 case "polar bear": animal = new PolarBear("Bao Bao")
                     {
                         height = "4.4 ft",
                         weight = "990 lbs",
-                        color = "white",
+                        color = "periwinkle",
                         isSleeping = false,
                         speed = 25,
                         hours = 15,

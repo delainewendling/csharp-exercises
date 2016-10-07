@@ -30,13 +30,13 @@ namespace Zoolandia.Animals
       {
         return $"{speed} mph when {reasonForRunning}";
       }
-      public string avgSleep(int hours)
+      public virtual string avgSleep(int hours)
       {
         return $"{hours} hours per day";
       }
       public string avgSleep(int hours, string sleepLocation)
       {
-        return $"{hours} and they sleep {sleepLocation}";
+        return $"{hours} hours and they sleep {sleepLocation}";
       }
       //Overwrite methods
       public virtual string animalMessage()
