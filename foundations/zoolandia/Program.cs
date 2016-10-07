@@ -1,5 +1,6 @@
 ﻿using System;
 using Zoolandia.Animals;
+using Zoolandia.Genuses;
 using Zoolandia.Species;
 
 namespace Zoolandia
@@ -8,38 +9,76 @@ namespace Zoolandia
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello! We're making animals! Type 'giraffe', 'panda', or 'sloth' to see your animal buddy!");
+            Console.WriteLine("Hello! We're making animals! Type 'giraffe', 'giant panda', 'red panda', 'brown bear', polar bear' or 'sloth' to see your animal buddy!");
             Animal animal = null;
             switch (Console.ReadLine())
             {
                 case "giraffe": animal = new Giraffe("Randy")
                     {
-                        animalName = "giraffe",
+                        region = "West Africa",
                         height = "14.5 ft",
                         weight = "1 ton",
                         color = "pink",
                         neckLength = "7.2 ft",
-                        isSleeping = false
+                        isSleeping = false,
+                        hours = 5,
+                        speed = 37,
+                        reasonForRunning = "when pursued by a predator",
+                        weirdFact = "Baby Giraffes can stand within half an hour and after only 10 hours can actually run alongside their family."
                     };
                     break;
-                case "panda": animal = new Panda("Bao Bao")
+                case "giant panda": animal = new GiantPanda("Bao Bao")
                     {
-                        animalName = "panda",
                         height = "2.7 ft",
                         weight = "320 lbs",
                         color = "white",
                         numberOfBambooStalks = 4,
-                        isSleeping = true
+                        isSleeping = true,
+                        speed = 20,
+                        hours = 12,
+                        weirdFact = "Giant Pandas spend about two-thirds of its day feeding and the remainder resting."
+                    };
+                    break;
+                case "red panda": animal = new RedPanda("Basil")
+                    {
+                        height = "1 ft",
+                        weight = "12 lbs",
+                        color = "red",
+                        numberOfBambooStalks = 1,
+                        isSleeping = false
+                    };
+                    break;
+                case "brown bear": animal = new BrownBear("Kodiak")
+                    {
+                        height = "2.7 ft",
+                        weight = "320 lbs",
+                        color = "white",
+                        isSleeping = false
+                    };
+                    break;
+                case "polar bear": animal = new PolarBear("Bao Bao")
+                    {
+                        height = "4.4 ft",
+                        weight = "990 lbs",
+                        color = "white",
+                        isSleeping = false,
+                        speed = 25,
+                        hours = 15,
+                        weirdFact = "Polar bears have black skin and although their fur appears white, it is actually transparent.",
+                        attack = "Polar bears are very curious but they are also very risk adverse, so they wait until it’s quiet to let their curiosity take over. Therefore, night time is the most prominent time for attacks to happen. Make sure you are aware of your surroundings and prepared with bear spray when staying near polar bears"
                     };
                     break;
                 case "sloth": animal = new Sloth("Larry")
                     {
-                        animalName = "sloth",
                         height = "2 ft",
                         weight = "18 lbs",
                         color = "green",
                         toeNumber = 3,
-                        isSleeping = true
+                        isSleeping = true,
+                        hours = 10,
+                        sleepLocation = "hanging from a tree",
+                        weirdFact = "A sloth only goes to the bathroom once a week!",
+                        speed = 0.17
                     };
                     break;
                 default:

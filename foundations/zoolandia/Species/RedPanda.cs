@@ -1,16 +1,14 @@
-using System;
-using Zoolandia.Animals;
+using Zoolandia.Genuses;
 
 namespace Zoolandia.Species
 {
-  class Panda:Animal
+  public class RedPanda:Ursid
   {
-    public Panda(string name)
+    public RedPanda(string name)
     {
-      this.speciesName = "Ailuropoda melanoleuca";
+      this.speciesName = "Ailurus fulgens";
       this.name = name;
     }
-
     public int numberOfBambooStalks{get; set;}
 
     public override string animalMessage()
