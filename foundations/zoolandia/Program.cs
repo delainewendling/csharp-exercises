@@ -12,9 +12,8 @@ namespace Zoolandia
             Animal animal = null;
             switch (Console.ReadLine())
             {
-                case "giraffe": animal = new Giraffe()
+                case "giraffe": animal = new Giraffe("Randy")
                     {
-                        name = "Randy",
                         animalName = "giraffe",
                         height = "14.5 ft",
                         weight = "1 ton",
@@ -23,9 +22,8 @@ namespace Zoolandia
                         isSleeping = false
                     };
                     break;
-                case "panda": animal = new Panda()
+                case "panda": animal = new Panda("Bao Bao")
                     {
-                        name = "Bao Bao",
                         animalName = "panda",
                         height = "2.7 ft",
                         weight = "320 lbs",
@@ -34,9 +32,8 @@ namespace Zoolandia
                         isSleeping = true
                     };
                     break;
-                case "sloth": animal = new Sloth()
+                case "sloth": animal = new Sloth("Larry")
                     {
-                        name = "Larry",
                         animalName = "sloth",
                         height = "2 ft",
                         weight = "18 lbs",

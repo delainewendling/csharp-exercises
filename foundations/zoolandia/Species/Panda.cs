@@ -5,9 +5,10 @@ namespace Zoolandia.Species
 {
   class Panda:Animal
   {
-    public Panda()
+    public Panda(string name)
     {
       this.speciesName = "Ailuropoda melanoleuca";
+      this.name = name;
     }
 
     public int numberOfBambooStalks{get; set;}
