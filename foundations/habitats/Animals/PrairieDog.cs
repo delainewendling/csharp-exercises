@@ -1,8 +1,8 @@
 namespace Zoolandia.Animals
 {
-  public class PraireDog:Animal
+  public class PrairieDog:Animal
   {
-    public PraireDog()
+    public PrairieDog()
     {
       this.name = "Prairie Dog";
     }

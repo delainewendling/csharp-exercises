@@ -1,11 +1,7 @@
-using System.Collections.Generic;
-using Zoolandia.Employees;
-
 namespace Zoolandia.Habitats
 {
-public class Arctic : Habitat
+public class Arctic : Habitat, IArcticHabitat
   {
-      public double temperature = 0;
       public void empty()
       {
         throw new System.NotImplementedException();
@@ -14,12 +10,11 @@ public class Arctic : Habitat
       {
         throw new System.NotImplementedException();
       }
-      private List<Employee> arcticCrew = new List<Employee>();
 
       // `public_name`, and `saltwater` properties can only be set when habitat is created
       public Arctic (string name, double cageTemperature)
       {
-          temperature = cageTemperature;
+          this.temperature = cageTemperature;
           this.publicname = name;
       }
   }
